@@ -1,0 +1,10 @@
+go run .
+go tool pprof cpu.prof
+web
+hide=runtime
+top
+web
+focus=math
+top
+web
+

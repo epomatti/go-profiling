@@ -1,0 +1,14 @@
+top
+tree
+top
+ignore=Wait
+top
+ignore=
+top
+hide=Wait
+top
+hide=
+granularity=files
+top
+granularity=functions
+top

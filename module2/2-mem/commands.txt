@@ -1,0 +1,13 @@
+go run main.go
+go tool pprof mem.prof
+
+top
+o
+granularity=lines
+top
+granularity=functions
+
+top
+peek processSliceParallel
+tree
+gif

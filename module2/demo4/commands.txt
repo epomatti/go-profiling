@@ -1,0 +1,5 @@
+go run main.go -cpuprofile='cpu.prof'
+go run main.go -memprofile='mem.prof'
+go run main.go -cpuprofile='cpu.prof' -memprofile='mem.prof'
+go tool pprof cpu.prof
+go tool pprof mem.prof

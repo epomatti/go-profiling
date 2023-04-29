@@ -1,0 +1,15 @@
+go run .
+go tool pprof cpu.prof
+
+top
+nodecount=20
+top
+focus=Pow
+top
+focus=expensiveMath
+top
+focus=
+top
+show=expensive
+top
+png
