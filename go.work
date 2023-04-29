@@ -9,4 +9,5 @@ use (
 	./profiling/5-web
 	./profiling/6-execflow
 	./tuning/1-cpucons
+	./tuning/2-memleak
 )
