@@ -1,0 +1,22 @@
+Remove-Item (Get-PSReadlineOption).HistorySavePath
+go install github.com/google/pprof@latest
+go run . 
+go test .
+go test -bench='.'
+go test -run='^$' -bench='.' 
+go test -run='^$' -bench='BenchmarkCalculateSquaresMain'
+go test -run='^$' -bench='BenchmarkCalculateSquares'
+go test -run='^$' -bench='BenchmarkCalculateSquares' -count='2'
+go test -run='^$' -bench='BenchmarkCalculateSquares' -count='2' -benchtime='3s'
+go test -run='^$' -bench='.' -cpuprofile='cpu.prof' -memprofile='mem.prof'
+
+
+go tool pprof cpu.prof
+top20
+granularity=lines
+sort=cum
+sort=flat
+granularity=functions
+web
+gif
+exit
