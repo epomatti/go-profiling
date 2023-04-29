@@ -8,3 +8,4 @@ focus=math
 top
 web
 
+go tool pprof -http localhost:8888 cpu.prof
