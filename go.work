@@ -6,4 +6,5 @@ use (
 	./module2/2-mem
 	./module2/3-block
 	./module2/4-dyn
+	./module2/5-web
 )
