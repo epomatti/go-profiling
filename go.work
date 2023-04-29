@@ -5,4 +5,5 @@ use (
 	./module2/1-cpu
 	./module2/2-mem
 	./module2/3-block
+	./module2/4-dyn
 )
